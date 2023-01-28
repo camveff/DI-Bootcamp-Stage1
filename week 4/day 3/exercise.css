@@ -1,0 +1,25 @@
+
+/*body {
+	font-size: 20px;
+}
+
+div {
+	background-color: lightblue;
+	padding: 2rem;
+}
+
+li:first-child {
+	display: none;
+}
+
+li:last-child {
+	border: 1px solid green;
+}*/
+
+img {
+	width: 100px;
+}
+
+.is-read {
+	color: red;
+}
