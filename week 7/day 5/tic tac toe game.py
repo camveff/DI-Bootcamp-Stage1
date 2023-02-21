@@ -115,7 +115,7 @@ def printPretty(board):
 
 def isWinner(board, symbol_1, symbol_2, count):
     winner = True
-
+       # split each code into functions, like is_win_by_row, is_win_by_column, etc... 
     for row in range(0, 3):
         if (board[row][0] == board[row][1] == board[row][2] == symbol_1):
             winner = False
