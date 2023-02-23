@@ -59,9 +59,9 @@ class Dog:
         other_score = other_dog.run_speed() * other_dog.weight
         if self_score > other_score:
             return f"{self.name} won the fight!"
-        elif self_score < other_score:
+        elif self_score < other_score: # elif it's redundant it should be if
             return f"{other_dog.name} won the fight!"
-        else:
+        else: # it's redundant you can remove it
             return "It's a tie!"
 
 dog1 = Dog("Fido", 3, 15)
