@@ -14,9 +14,9 @@ def get_user_menu_choice():
         choice = input("Enter your choice (1-3): ")
         if choice == '1':
             return 'play'
-        elif choice == '2':
+        elif choice == '2': # the elif is redundant because one line before we are doing return so change it to if
             return 'scores'
-        elif choice == '3':
+        elif choice == '3': # the elif is redundant because one line before we are doing return so change it to if
             return 'quit'
         else:
             print("Invalid choice. Please try again.")
