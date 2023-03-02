@@ -31,7 +31,7 @@ class Currency:
                 raise TypeError(f"Cannot add between Currency type <{self.currency}> and <{other.currency}>")
             else:
                 return Currency(self.currency, self.amount + other.amount)
-        else:
+        else: # this else is redundant because you do return at the prev lines
             return Currency(self.currency, self.amount + other)
 
     def __iadd__(self, other):
@@ -43,6 +43,8 @@ class Currency:
         else:
             self.amount += other
         return self
+    
+    # Missing some requirements, I really recommend to implement them
 
 
 c1 = Currency('dollar', 5)
